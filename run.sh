@@ -9,7 +9,7 @@ echo -e "\e[31;43m***** Installing Drivers and Prerequisites *****\e[0m"
 sudo apt-get install software-properties-common gcc make build-essential pkg-config libc6-dev m4 g++-multilib autoconf libtool ncurses-dev unzip git python python-zmq zlib1g-dev wget bsdmainutils automake -y
 sudo add-apt-repository ppa:ethereum/ethereum -y
 sudo apt-get update -y
-sudo apt-get install ethereum ethminer geth build-essential -y
+sudo apt-get install ethereum geth build-essential -y
 wget http://uk.download.nvidia.com/XFree86/Linux-x86_64/375.26/NVIDIA-Linux-x86_64-375.26.run
 sudo chmod +x NVIDIA-Linux-x86_64-375.26.run
 sudo ./NVIDIA-Linux-x86_64-375.26.run --accept-license --no-questions --no-install-compat32-libs
