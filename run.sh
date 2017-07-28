@@ -3,7 +3,7 @@
 # Script by Ben Thompson
 sudo apt-get update -y
 sudo apt-get dist-upgrade -y
-sudo apt-get -y install gcc g++ build-essential libssl-dev automake linux-headers-$(uname -r) git gawk libcurl4-openssl-dev libjansson-dev xorg libc++-dev libgmp-dev python-dev
+sudo apt-get install gcc g++ build-essential libssl-dev automake linux-headers-$(uname -r) git gawk libcurl4-openssl-dev libjansson-dev xorg libc++-dev libgmp-dev python-dev -y
 
 echo -e "\e[31;43m***** Installing Drivers and Prerequisites *****\e[0m"
 sudo apt-get install software-properties-common gcc make build-essential pkg-config libc6-dev m4 g++-multilib autoconf libtool ncurses-dev unzip git python python-zmq zlib1g-dev wget bsdmainutils automake -y
