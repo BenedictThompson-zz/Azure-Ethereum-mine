@@ -32,4 +32,6 @@ cd ccminer
 ./configure
 make -j$(nproc)
 sudo make install -j$(nproc)
+sudo apt-get install nvidia-cuda-dev nvidia-cuda-toolkit nvidia-nsight -y
+
 echo -e "\e[31;43m***** Done! *****\e[0m"
