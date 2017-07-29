@@ -10,6 +10,8 @@ sudo apt-get install software-properties-common gcc make build-essential pkg-con
 sudo add-apt-repository ppa:ethereum/ethereum -y
 sudo apt-get update -y
 sudo apt-get install ethereum geth build-essential -y
+sudo apt install cmake* gcc-multilib g++-multilib clang-4.0 -y
+sudo apt-get install nvidia-cuda-dev nvidia-cuda-toolkit nvidia-nsight -y
 wget http://uk.download.nvidia.com/XFree86/Linux-x86_64/375.26/NVIDIA-Linux-x86_64-375.26.run
 sudo chmod +x NVIDIA-Linux-x86_64-375.26.run
 sudo ./NVIDIA-Linux-x86_64-375.26.run --accept-license --no-questions --no-install-compat32-libs
@@ -32,6 +34,5 @@ cd ccminer
 ./configure
 make -j$(nproc)
 sudo make install -j$(nproc)
-sudo apt-get install nvidia-cuda-dev nvidia-cuda-toolkit nvidia-nsight -y
 
 echo -e "\e[31;43m***** Done! *****\e[0m"
